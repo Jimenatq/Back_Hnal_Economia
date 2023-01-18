@@ -1,0 +1,240 @@
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.exe
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.deps.json
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.json
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.dev.json
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.AssemblyReference.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfoInputs.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfo.cs
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CoreCompileInputs.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Manifest.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Pack.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.RIAE3.1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.RIAE3.1.props
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.RIAE3.1.props
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.RIAE3.1.props
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.RazorTargetAssemblyInfo.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CopyComplete
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.genruntimeconfig.cache
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Programs\Proyect\Back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.exe
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.deps.json
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.json
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.dev.json
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.AssemblyReference.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfoInputs.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfo.cs
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CoreCompileInputs.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Manifest.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.xml
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\scopedcss\bundle\RIAE3.1.styles.css
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.RazorTargetAssemblyInfo.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CopyComplete
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.genruntimeconfig.cache
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\Proyect\back\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.StaticWebAssets.xml
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.exe
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.deps.json
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.json
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.dev.json
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.AssemblyReference.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfoInputs.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfo.cs
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CoreCompileInputs.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Manifest.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Pack.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.RIAE3.1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.RIAE3.1.props
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.RIAE3.1.props
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.RIAE3.1.props
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.RazorTargetAssemblyInfo.cache
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CopyComplete
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\Jimena\Desktop\RIAE\BACK\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.genruntimeconfig.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.AssemblyReference.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfoInputs.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.AssemblyInfo.cs
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CoreCompileInputs.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.exe
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.deps.json
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.json
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.runtimeconfig.dev.json
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\RIAE3.1.pdb
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.Manifest.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\staticwebassets\RIAE3.1.StaticWebAssets.xml
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\scopedcss\bundle\RIAE3.1.styles.css
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.RazorTargetAssemblyInfo.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CopyComplete
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.genruntimeconfig.cache
