@@ -11,6 +11,5 @@ namespace RIAE3._1.Context
         }
         public DbSet<Registros> Registros { get; set; }
         public DbSet<Boletas> Boletas { get; set; }
-        //public DbSet<Models.Request.RegistrosRequest> RegistrosRequests { get; set; }
     }
 }

@@ -1,18 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Win32;
 using RIAE3._1.Models;
 using System;
-using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using RIAE3._1.Controllers;
 using RIAE3._1.Context;
 using System.Linq;
 using RIAE3._1.Models.Request;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
+using System.Collections.Generic;
 
 namespace RIAE3._1.Controllers
 {
@@ -21,78 +19,87 @@ namespace RIAE3._1.Controllers
     public class RegistrosController : ControllerBase
     {
         public readonly AplicationDbContext _context;
-        public RegistrosController(AplicationDbContext context)
+        public RegistrosController(AplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
-            //Configuration = configuration;
+            Configuration = configuration;
         }
-        //public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }
 
-        [HttpGet]
+        [HttpGet()]
         public IActionResult Get()
         {
+            /////////////////////////////////////////
             try
             {
-                //var lista =  _context.Registros.Include(p => p.Categoria).ToList();
-                var lista = _context.Registros.ToList();
-                //var lista = _context.Registros.ToList();
-
-                /*foreach (var modelregistro in lista)
+                var listaRegistros = _context.Registros.ToList();
+                foreach (var registros in listaRegistros)
                 {
-                    if (modelregistro.IdRegistro=)
+                    RegistrosRequest registro = new RegistrosRequest();
+                    
+                    registro.IdRegistro = registros.IdRegistro;
+                    registro.IdParametroTipo = registros.IdParametroTipo;
+                    registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                    registro.NroRecibo = registros.NroRecibo;
+                    registro.Fecha = registros.Fecha;
+                    registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                    registro.Igv = registros.Igv;
+                    registro.MontoIgv = registros.MontoIgv;
+                    registro.NombreEmpresa = registros.NombreEmpresa;
+                    registro.NotaInformativa = registros.NotaInformativa;
+                    registro.NombreFactura = registros.NombreFactura;
+                    registro.FechaGlosa = registros.FechaGlosa;
+                    registro.ImporteDeposito = registros.ImporteDeposito;
+                    registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                    registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.MontoVoucher = registros.MontoVoucher;
+                    registro.NroCheque = registros.NroCheque;
+                    registro.MontoCheque = registros.MontoCheque;
+                    registro.NroNotaAbono = registros.NroNotaAbono;
+                    registro.MontoNotaAbono = registros.MontoNotaAbono;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.NombreBanco = registros.NombreBanco;
+                    registro.TextoGlosa = registros.TextoGlosa;
+                    registro.UsuarioCreacion = registros.UsuarioCreacion;
+                    registro.FechaCreacion = registros.FechaCreacion;
+                    registro.UsuarioModificacion = registros.UsuarioModificacion;
+                    registro.FechaModificacion = registros.FechaModificacion;
+                    //registro.listBoletas = (List<Models.Request.Boletas>)_context.Boletas.Where(a => a.IdRegistro==registro.IdRegistro);
+                    var listaBoletas = _context.Boletas.ToList();
+                    foreach (var boletas in listaBoletas)
                     {
+                        if (boletas.IdRegistro==registro.IdRegistro)
+                        {
+                            //foreach (var modelBoleta in registro.listBoletas)
+                            //{
+                                registro.listBoletas = new List<Models.Request.Boletas>();
+                                registro.listBoletas.Add(new Models.Request.Boletas()
+                                {
+                                    IdBoleta = boletas.IdBoleta,
+                                    IdParametro = boletas.IdParametro,
+                                    IdRegistro = boletas.IdRegistro,
+                                    ImporteUnitarioClasificador = boletas.ImporteUnitarioClasificador
+                                });
+                            //}
 
+                            
+                    return Ok(registro);
+                        }
+                        //aca sale vacio el return registro.listboletas
                     }
-                }*/
-                //var lista= _context.Boletas.ToList();
-                //getlist.Add(getlist);
-
-                return Ok(lista);
+                    //aca sale vacio el return registro.listboletas
+                }
+                return Ok();
             }
             catch (Exception ex)
             {
-                return Ok(ex);
+                return BadRequest(ex);
             }
-            /*
-            string query = @"
-                            select dbo.Registros.IdRegistro, IdParametroTipo, case IdParametroTipo when 1 then 'Ingresos Propios'
-                            when 2 then 'Fondo Rotatorio' end as 'NombreTipo', IdParametroSubtipo,
-							case IdParametroSubtipo when 3 then 'Recaudación'
-                            when 4 then 'Penalidad' when 5 then 'Factura'
-                            when 6 then 'Protocolo' when 7 then 'Detracción'
-                            when 8 then 'Otros servicios' when 9 then 'Otros ingresos'
-                            when 10 then 'Ingresos diversos' when 11 then 'Recaudación por efectivo de caja'
-                            when 12 then 'Pago de facturas - Cheque' when 13 then 'Pago de facturas - Nota de Abono'
-                            when 14 then 'Otros pagos' end as 'NombreSubtipo', NroRecibo,
-                            convert(varchar(10), Fecha, 103) as Fecha, ImporteTotalBoleta, Igv, MontoIgv,
-                            NombreEmpresa,NotaInformativa, NombreFactura, convert(varchar(10), FechaGlosa, 103)
-                            as FechaGlosa, ImporteDeposito, ImporteTotalTipoIP, ImporteTotalTipoFR, NroVoucher,
-                            MontoVoucher, NroCheque, MontoCheque, NroNotaAbono, MontoNotaAbono, NombreBanco,
-                            TextoGlosa, UsuarioCreacion, convert(varchar(10), FechaCreacion, 103) as FechaCreacion,
-                            UsuarioModificacion, convert(varchar(10), FechaModificacion, 103) as FechaModificacion,
-                            IdBoleta, IdParametro, ImporteUnitarioClasificador
-                            from dbo.Registros, dbo.Boletas
-							WHERE dbo.Registros.IdRegistro = dbo.Boletas.IdRegistro;
-                            ";
-            DataTable table = new DataTable();
-            SqlDataReader myReader;
-            using (SqlConnection myCon = new SqlConnection(Configuration.GetConnectionString("RiaeAppConex")))
-            {
-                myCon.Open();
-                using (SqlCommand myCommand = new SqlCommand(query, myCon))
-                {
-                    myReader = myCommand.ExecuteReader();
-                    table.Load(myReader);
-                    myReader.Close();
-                    myCon.Close();
-                }
-            }
-
-            return new JsonResult(table);*/
         }
 
         [HttpPost]
-        public IActionResult Post(RegistrosRequest registros)
+        public async Task<IActionResult> Post(RegistrosRequest registros)
         {
             try
             {
@@ -125,7 +132,7 @@ namespace RIAE3._1.Controllers
                 registro.UsuarioModificacion = registros.UsuarioModificacion;
                 registro.FechaModificacion = registros.FechaModificacion;
                 _context.Registros.Add(registro);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 foreach (var modelBoleta in registros.listBoletas)
                 {
                     var boleta = new Models.Boletas();
@@ -133,14 +140,147 @@ namespace RIAE3._1.Controllers
                     boleta.IdParametro = modelBoleta.IdParametro;
                     boleta.ImporteUnitarioClasificador = modelBoleta.ImporteUnitarioClasificador;
                     _context.Boletas.Add(boleta);
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                 }
                 return Ok("registro con boletas guardado");
             }
             catch (Exception ex)
             {
-                return Ok(ex);
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(RegistrosRequest registros)
+        {
+            try
+            {
+                var registro = new Registros();
+                registro.IdRegistro = registros.IdRegistro;
+                registro.IdParametroTipo = registros.IdParametroTipo;
+                registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                registro.NroRecibo = registros.NroRecibo;
+                registro.Fecha = registros.Fecha;
+                registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                registro.Igv = registros.Igv;
+                registro.MontoIgv = registros.MontoIgv;
+                registro.NombreEmpresa = registros.NombreEmpresa;
+                registro.NotaInformativa = registros.NotaInformativa;
+                registro.NombreFactura = registros.NombreFactura;
+                registro.FechaGlosa = registros.FechaGlosa;
+                registro.ImporteDeposito = registros.ImporteDeposito;
+                registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.MontoVoucher = registros.MontoVoucher;
+                registro.NroCheque = registros.NroCheque;
+                registro.MontoCheque = registros.MontoCheque;
+                registro.NroNotaAbono = registros.NroNotaAbono;
+                registro.MontoNotaAbono = registros.MontoNotaAbono;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.NombreBanco = registros.NombreBanco;
+                registro.TextoGlosa = registros.TextoGlosa;
+                registro.UsuarioCreacion = registros.UsuarioCreacion;
+                registro.FechaCreacion = registros.FechaCreacion;
+                registro.UsuarioModificacion = registros.UsuarioModificacion;
+                registro.FechaModificacion = registros.FechaModificacion;
+                _context.Entry(registro).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+                foreach (var modelBoleta in registros.listBoletas)
+                {
+                    var boleta = new Models.Boletas();
+                    boleta.IdBoleta = modelBoleta.IdBoleta;
+                    boleta.IdRegistro = registro.IdRegistro;
+                    boleta.IdParametro = modelBoleta.IdParametro;
+                    boleta.ImporteUnitarioClasificador = modelBoleta.ImporteUnitarioClasificador;
+                    _context.Entry(boleta).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                }
+                return Ok("registro con boletas modificado");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+        [HttpDelete("{id}")]
+        //[HttpGet("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        //public IActionResult Delete(int id)
+        {
+            try
+            {
+                var listaBoletas = await _context.Boletas.ToListAsync();
+                
+                //return Ok(registroAEliminar);
+                foreach (var boletaAEliminar in listaBoletas)
+                {
+                    if (boletaAEliminar.IdRegistro == id)
+                    {
+                        string query = @"
+                            delete from dbo.Boletas
+                            where IdBoleta = @IdBoleta
+                            ";
+                        string sqlDataSource = Configuration.GetConnectionString("RiaeAppConex");
+                        SqlDataReader myReader;
+                        using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+                        {
+                            myCon.Open();
+                            using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                            {
+                                myCommand.Parameters.AddWithValue("@IdBoleta", boletaAEliminar.IdBoleta);
+
+                                myReader = myCommand.ExecuteReader();
+                                myReader.Close();
+                                myCon.Close();
+                            }
+                        }
+                    }
+                    //return Ok("registro con boletas eliminado");
+                }
+                var registroAEliminar = await _context.Registros.FindAsync(id);
+                _context.Remove(registroAEliminar);
+                await _context.SaveChangesAsync();
+                return Ok("registro con boletas eliminado");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex + "hola");
             }
         }
     }
+    //var boletaAEliminar = _context.Boletas.FindAsync(boleta.IdBoleta);
+    /*if (registroAEliminar == null)
+    {
+        return NotFound();
+    }
+    _context.Remove(registroAEliminar);
+    await _context.SaveChangesAsync();*/
 }
+//como pasar objeto parecido al que se pasa en FindAsync para eliminar
+/*ObjectFind objectFind = new ObjectFind();
+                        {
+                            objectFind.IsCompleted = false;
+                            objectFind.IsCompletedSuccessfully = false;
+                            objectFind.IsFaulted = false;
+                            objectFind.IsCanceled = false;
+                            objectFind.Result = new ResultModel()
+                            {
+                                IdBoleta = boletaAEliminar.IdBoleta,
+                                IdRegistro = boletaAEliminar.IdRegistro,
+                                IdParametro = boletaAEliminar.IdParametro,
+                                ImporteUnitarioClasificador = boletaAEliminar.ImporteUnitarioClasificador
+                            };
+
+                        }
+                        
+                        return Ok(objectFind);
+                        _context.Remove(objectFind);
+                        await _context.SaveChangesAsync();
+                        */
+
+
+//////////////////////////////////////////////////////
+//para sacar reportes con recibos ordenados: Nota: solo faltaria  una condicional para q sea solo de tipo 1 o 2
+//var c = _context.Registros.OrderBy(p => p.NroRecibo);
+//return Ok(c);

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace RIAE3._1.Models.Request
 {
+    public class ListaRegistros
+    {
+        RegistrosRequest ListaRegistro { get; set; }
+    }
     public class RegistrosRequest
     {
         [Key]
