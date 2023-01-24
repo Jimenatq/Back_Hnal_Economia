@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\jtoledo\\Desktop\\nuevo acceso\\RIAE3.1\\RIAE3.1\\RIAE3.1.csproj",
         "projectName": "RIAE3.1",
         "projectPath": "C:\\Users\\jtoledo\\Desktop\\nuevo acceso\\RIAE3.1\\RIAE3.1\\RIAE3.1.csproj",
-        "packagesPath": "C:\\Users\\Administrador.BHUATARONGO\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\jtoledo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jtoledo\\Desktop\\nuevo acceso\\RIAE3.1\\RIAE3.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador.BHUATARONGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jtoledo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

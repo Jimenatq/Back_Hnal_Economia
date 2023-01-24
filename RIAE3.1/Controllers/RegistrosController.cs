@@ -26,17 +26,57 @@ namespace RIAE3._1.Controllers
         }
         public IConfiguration Configuration { get; }
 
-        [HttpGet()]
-        public IActionResult Get()
+        [HttpGet]
+        public async Task<IActionResult> Get()
         {
-            /////////////////////////////////////////
-            try
+            ListaRegistros prueba = new ListaRegistros();
+            var listaRegistros = await _context.Registros.ToListAsync();
+            foreach (var registros in listaRegistros)
             {
-                var listaRegistros = _context.Registros.ToList();
-                foreach (var registros in listaRegistros)
+                Registros registro = new Registros();
+                registro.IdRegistro = registros.IdRegistro;
+                registro.IdParametroTipo = registros.IdParametroTipo;
+                registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                registro.NroRecibo = registros.NroRecibo;
+                registro.Fecha = registros.Fecha;
+                registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                registro.Igv = registros.Igv;
+                registro.MontoIgv = registros.MontoIgv;
+                registro.NombreEmpresa = registros.NombreEmpresa;
+                registro.NotaInformativa = registros.NotaInformativa;
+                registro.NombreFactura = registros.NombreFactura;
+                registro.FechaGlosa = registros.FechaGlosa;
+                registro.ImporteDeposito = registros.ImporteDeposito;
+                registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.MontoVoucher = registros.MontoVoucher;
+                registro.NroCheque = registros.NroCheque;
+                registro.MontoCheque = registros.MontoCheque;
+                registro.NroNotaAbono = registros.NroNotaAbono;
+                registro.MontoNotaAbono = registros.MontoNotaAbono;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.NombreBanco = registros.NombreBanco;
+                registro.TextoGlosa = registros.TextoGlosa;
+                registro.UsuarioCreacion = registros.UsuarioCreacion;
+                registro.FechaCreacion = registros.FechaCreacion;
+                registro.UsuarioModificacion = registros.UsuarioModificacion;
+                registro.FechaModificacion = registros.FechaModificacion;
+                registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
+                prueba.registros.Add(registro);
+            }
+            return Ok(prueba);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Getid(int id)
+        {
+            var listaRegistros = await _context.Registros.ToListAsync();
+            foreach (var registros in listaRegistros)
+            {
+                if (registros.IdRegistro == id)
                 {
-                    RegistrosRequest registro = new RegistrosRequest();
-                    
+                    Registros registro = new Registros();
                     registro.IdRegistro = registros.IdRegistro;
                     registro.IdParametroTipo = registros.IdParametroTipo;
                     registro.IdParametroSubtipo = registros.IdParametroSubtipo;
@@ -65,37 +105,15 @@ namespace RIAE3._1.Controllers
                     registro.FechaCreacion = registros.FechaCreacion;
                     registro.UsuarioModificacion = registros.UsuarioModificacion;
                     registro.FechaModificacion = registros.FechaModificacion;
-                    //registro.listBoletas = (List<Models.Request.Boletas>)_context.Boletas.Where(a => a.IdRegistro==registro.IdRegistro);
-                    var listaBoletas = _context.Boletas.ToList();
-                    foreach (var boletas in listaBoletas)
-                    {
-                        if (boletas.IdRegistro==registro.IdRegistro)
-                        {
-                            //foreach (var modelBoleta in registro.listBoletas)
-                            //{
-                                registro.listBoletas = new List<Models.Request.Boletas>();
-                                registro.listBoletas.Add(new Models.Request.Boletas()
-                                {
-                                    IdBoleta = boletas.IdBoleta,
-                                    IdParametro = boletas.IdParametro,
-                                    IdRegistro = boletas.IdRegistro,
-                                    ImporteUnitarioClasificador = boletas.ImporteUnitarioClasificador
-                                });
-                            //}
-
-                            
+                    registro.listBoletas = await _context.Boletas.Where(p=>p.IdRegistro==id).ToListAsync();
+                    /*ListaRegistros prueba = new ListaRegistros();
+                    prueba.registro.Add(_context.Registros.FirstOrDefault(i=>i.IdRegistro==id));
+                    prueba.boletas = _context.Boletas.Where(p => p.IdRegistro == id).ToList();
+                    return Ok(prueba);*/
                     return Ok(registro);
-                        }
-                        //aca sale vacio el return registro.listboletas
-                    }
-                    //aca sale vacio el return registro.listboletas
                 }
-                return Ok();
             }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            return Ok();
         }
 
         [HttpPost]

@@ -36,6 +36,7 @@ namespace RIAE3._1.Models
         public DateTime? FechaCreacion { get; set; }
         public string UsuarioModificacion { get; set; }
         public DateTime? FechaModificacion { get; set; }
-        //public virtual Boletas Categoria { get; set; }
+        
+        public List<Boletas> listBoletas = new List<Boletas>();
     }
 }

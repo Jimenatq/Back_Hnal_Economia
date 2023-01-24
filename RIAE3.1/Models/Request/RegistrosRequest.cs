@@ -8,7 +8,9 @@ namespace RIAE3._1.Models.Request
 {
     public class ListaRegistros
     {
-        RegistrosRequest ListaRegistro { get; set; }
+        public List<Registros> registros = new List<Registros>();
+
+        //public  List<Models.Boletas> boletas = new List<Models.Boletas>();
     }
     public class RegistrosRequest
     {
