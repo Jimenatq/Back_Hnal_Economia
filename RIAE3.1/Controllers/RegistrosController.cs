@@ -68,6 +68,98 @@ namespace RIAE3._1.Controllers
             return Ok(prueba);
         }
 
+        [HttpGet]
+        [Route("ipropios")]
+        public async Task<IActionResult> GetIPropios()
+        {
+            ListaRegistros prueba = new ListaRegistros();
+            var listaRegistros = await _context.Registros.ToListAsync();
+            foreach (var registros in listaRegistros)
+            {
+                if(registros.IdParametroTipo == 1)
+                {
+                    Registros registro = new Registros();
+                    registro.IdRegistro = registros.IdRegistro;
+                    registro.IdParametroTipo = registros.IdParametroTipo;
+                    registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                    registro.NroRecibo = registros.NroRecibo;
+                    registro.Fecha = registros.Fecha;
+                    registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                    registro.Igv = registros.Igv;
+                    registro.MontoIgv = registros.MontoIgv;
+                    registro.NombreEmpresa = registros.NombreEmpresa;
+                    registro.NotaInformativa = registros.NotaInformativa;
+                    registro.NombreFactura = registros.NombreFactura;
+                    registro.FechaGlosa = registros.FechaGlosa;
+                    registro.ImporteDeposito = registros.ImporteDeposito;
+                    registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                    registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.MontoVoucher = registros.MontoVoucher;
+                    registro.NroCheque = registros.NroCheque;
+                    registro.MontoCheque = registros.MontoCheque;
+                    registro.NroNotaAbono = registros.NroNotaAbono;
+                    registro.MontoNotaAbono = registros.MontoNotaAbono;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.NombreBanco = registros.NombreBanco;
+                    registro.TextoGlosa = registros.TextoGlosa;
+                    registro.UsuarioCreacion = registros.UsuarioCreacion;
+                    registro.FechaCreacion = registros.FechaCreacion;
+                    registro.UsuarioModificacion = registros.UsuarioModificacion;
+                    registro.FechaModificacion = registros.FechaModificacion;
+                    registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
+                    prueba.registros.Add(registro);
+                }
+            }
+            return Ok(prueba);
+        }
+
+        [HttpGet]
+        [Route("frotatorio")]
+        public async Task<IActionResult> GetFRotatorio()
+        {
+            ListaRegistros prueba = new ListaRegistros();
+            var listaRegistros = await _context.Registros.ToListAsync();
+            foreach (var registros in listaRegistros)
+            {
+                if (registros.IdParametroTipo == 2)
+                {
+                    Registros registro = new Registros();
+                    registro.IdRegistro = registros.IdRegistro;
+                    registro.IdParametroTipo = registros.IdParametroTipo;
+                    registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                    registro.NroRecibo = registros.NroRecibo;
+                    registro.Fecha = registros.Fecha;
+                    registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                    registro.Igv = registros.Igv;
+                    registro.MontoIgv = registros.MontoIgv;
+                    registro.NombreEmpresa = registros.NombreEmpresa;
+                    registro.NotaInformativa = registros.NotaInformativa;
+                    registro.NombreFactura = registros.NombreFactura;
+                    registro.FechaGlosa = registros.FechaGlosa;
+                    registro.ImporteDeposito = registros.ImporteDeposito;
+                    registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                    registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.MontoVoucher = registros.MontoVoucher;
+                    registro.NroCheque = registros.NroCheque;
+                    registro.MontoCheque = registros.MontoCheque;
+                    registro.NroNotaAbono = registros.NroNotaAbono;
+                    registro.MontoNotaAbono = registros.MontoNotaAbono;
+                    registro.NroVoucher = registros.NroVoucher;
+                    registro.NombreBanco = registros.NombreBanco;
+                    registro.TextoGlosa = registros.TextoGlosa;
+                    registro.UsuarioCreacion = registros.UsuarioCreacion;
+                    registro.FechaCreacion = registros.FechaCreacion;
+                    registro.UsuarioModificacion = registros.UsuarioModificacion;
+                    registro.FechaModificacion = registros.FechaModificacion;
+                    registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
+                    prueba.registros.Add(registro);
+                }
+            }
+            return Ok(prueba);
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Getid(int id)
         {
