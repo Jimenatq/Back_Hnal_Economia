@@ -36,6 +36,7 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15",
           "System.Data.SqlClient": "4.8.5",
+          "System.DirectoryServices": "4.5.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -946,6 +947,31 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.DirectoryServices/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.IO.FileSystem.AccessControl": "4.5.0",
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.DirectoryServices.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.DirectoryServices.dll": {}
+        }
+      },
       "System.Globalization/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -998,6 +1024,15 @@
           "System.Runtime.Handles": "4.3.0",
           "System.Text.Encoding": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.IO.FileSystem.AccessControl/4.5.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.3.0": {
@@ -3372,6 +3407,13 @@
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
+    "System.DirectoryServices/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Uty9sMaeBG0/GIRTW4+DUTvuB/od5E6rY45JbEz1c2xMoPSA9GLov4KdiBEpjsEcsgORa6sC3vfh70tEJJaOw==",
+      "path": "system.directoryservices/4.5.0",
+      "hashPath": "system.directoryservices.4.5.0.nupkg.sha512"
+    },
     "System.Globalization/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3406,6 +3448,13 @@
       "sha512": "sha512-3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
       "path": "system.io.filesystem/4.3.0",
       "hashPath": "system.io.filesystem.4.3.0.nupkg.sha512"
+    },
+    "System.IO.FileSystem.AccessControl/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TYe6xstoqT5MlTly0OtPU6u9zWuNScLVMEx6sTCjjx+Hqdp0wCXoG6fnzMpTPMQACXQzi9pd2N5Tloow+5jQdQ==",
+      "path": "system.io.filesystem.accesscontrol/4.5.0",
+      "hashPath": "system.io.filesystem.accesscontrol.4.5.0.nupkg.sha512"
     },
     "System.IO.FileSystem.Primitives/4.3.0": {
       "type": "package",

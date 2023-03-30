@@ -30,7 +30,7 @@ namespace RIAE3._1.Controllers
         public async Task<IActionResult> Get()
         {
             ListaRegistros prueba = new ListaRegistros();
-            var listaRegistros = await _context.Registros.ToListAsync();
+            var listaRegistros = await _context.Registros.OrderByDescending(x => x.IdRegistro).ToListAsync();
             foreach (var registros in listaRegistros)
             {
                 Registros registro = new Registros();
@@ -68,96 +68,94 @@ namespace RIAE3._1.Controllers
             return Ok(prueba);
         }
 
-        [HttpGet]
-        [Route("ipropios")]
-        public async Task<IActionResult> GetIPropios()
+        [HttpPost]
+        [Route("ingpropios")]
+        public async Task<IActionResult> GetIPropios(listaRegistrosPorAnio regis)
         {
-            ListaRegistros prueba = new ListaRegistros();
-            var listaRegistros = await _context.Registros.ToListAsync();
+            int anioSolicitado = regis.anio;
+            ListaRegistros listaRegistrosIngresosPropios = new ListaRegistros();
+            var listaRegistros = await _context.Registros.OrderByDescending(x => x.NroRecibo).Where(x => x.Fecha.Year == anioSolicitado && x.IdParametroTipo==1).ToListAsync();
             foreach (var registros in listaRegistros)
             {
-                if(registros.IdParametroTipo == 1)
-                {
-                    Registros registro = new Registros();
-                    registro.IdRegistro = registros.IdRegistro;
-                    registro.IdParametroTipo = registros.IdParametroTipo;
-                    registro.IdParametroSubtipo = registros.IdParametroSubtipo;
-                    registro.NroRecibo = registros.NroRecibo;
-                    registro.Fecha = registros.Fecha;
-                    registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
-                    registro.Igv = registros.Igv;
-                    registro.MontoIgv = registros.MontoIgv;
-                    registro.NombreEmpresa = registros.NombreEmpresa;
-                    registro.NotaInformativa = registros.NotaInformativa;
-                    registro.NombreFactura = registros.NombreFactura;
-                    registro.FechaGlosa = registros.FechaGlosa;
-                    registro.ImporteDeposito = registros.ImporteDeposito;
-                    registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
-                    registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
-                    registro.NroVoucher = registros.NroVoucher;
-                    registro.MontoVoucher = registros.MontoVoucher;
-                    registro.NroCheque = registros.NroCheque;
-                    registro.MontoCheque = registros.MontoCheque;
-                    registro.NroNotaAbono = registros.NroNotaAbono;
-                    registro.MontoNotaAbono = registros.MontoNotaAbono;
-                    registro.NroVoucher = registros.NroVoucher;
-                    registro.NombreBanco = registros.NombreBanco;
-                    registro.TextoGlosa = registros.TextoGlosa;
-                    registro.UsuarioCreacion = registros.UsuarioCreacion;
-                    registro.FechaCreacion = registros.FechaCreacion;
-                    registro.UsuarioModificacion = registros.UsuarioModificacion;
-                    registro.FechaModificacion = registros.FechaModificacion;
-                    registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
-                    prueba.registros.Add(registro);
-                }
+                Registros registro = new Registros();
+                registro.IdRegistro = registros.IdRegistro;
+                registro.IdParametroTipo = registros.IdParametroTipo;
+                registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                registro.NroRecibo = registros.NroRecibo;
+                registro.Fecha = registros.Fecha;
+                registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                registro.Igv = registros.Igv;
+                registro.MontoIgv = registros.MontoIgv;
+                registro.NombreEmpresa = registros.NombreEmpresa;
+                registro.NotaInformativa = registros.NotaInformativa;
+                registro.NombreFactura = registros.NombreFactura;
+                registro.FechaGlosa = registros.FechaGlosa;
+                registro.ImporteDeposito = registros.ImporteDeposito;
+                registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.MontoVoucher = registros.MontoVoucher;
+                registro.NroCheque = registros.NroCheque;
+                registro.MontoCheque = registros.MontoCheque;
+                registro.NroNotaAbono = registros.NroNotaAbono;
+                registro.MontoNotaAbono = registros.MontoNotaAbono;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.NombreBanco = registros.NombreBanco;
+                registro.TextoGlosa = registros.TextoGlosa;
+                registro.UsuarioCreacion = registros.UsuarioCreacion;
+                registro.FechaCreacion = registros.FechaCreacion;
+                registro.UsuarioModificacion = registros.UsuarioModificacion;
+                registro.FechaModificacion = registros.FechaModificacion;
+                registro.Anulado = registros.Anulado;
+                registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
+                listaRegistrosIngresosPropios.registros.Add(registro);
             }
-            return Ok(prueba);
+            return Ok(listaRegistrosIngresosPropios.registros);
         }
 
-        [HttpGet]
-        [Route("frotatorio")]
-        public async Task<IActionResult> GetFRotatorio()
+        [HttpPost]
+        [Route("fondorotatorio")]
+        public async Task<IActionResult> GetFondoRotatorio(listaRegistrosPorAnio regis)
         {
-            ListaRegistros prueba = new ListaRegistros();
-            var listaRegistros = await _context.Registros.ToListAsync();
+            int anioSolicitado = regis.anio;
+            ListaRegistros listaRegistrosFondoRotatorio = new ListaRegistros();
+            var listaRegistros = await _context.Registros.OrderByDescending(x => x.NroRecibo).Where(x => x.Fecha.Year == anioSolicitado && x.IdParametroTipo==2).ToListAsync();
             foreach (var registros in listaRegistros)
             {
-                if (registros.IdParametroTipo == 2)
-                {
-                    Registros registro = new Registros();
-                    registro.IdRegistro = registros.IdRegistro;
-                    registro.IdParametroTipo = registros.IdParametroTipo;
-                    registro.IdParametroSubtipo = registros.IdParametroSubtipo;
-                    registro.NroRecibo = registros.NroRecibo;
-                    registro.Fecha = registros.Fecha;
-                    registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
-                    registro.Igv = registros.Igv;
-                    registro.MontoIgv = registros.MontoIgv;
-                    registro.NombreEmpresa = registros.NombreEmpresa;
-                    registro.NotaInformativa = registros.NotaInformativa;
-                    registro.NombreFactura = registros.NombreFactura;
-                    registro.FechaGlosa = registros.FechaGlosa;
-                    registro.ImporteDeposito = registros.ImporteDeposito;
-                    registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
-                    registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
-                    registro.NroVoucher = registros.NroVoucher;
-                    registro.MontoVoucher = registros.MontoVoucher;
-                    registro.NroCheque = registros.NroCheque;
-                    registro.MontoCheque = registros.MontoCheque;
-                    registro.NroNotaAbono = registros.NroNotaAbono;
-                    registro.MontoNotaAbono = registros.MontoNotaAbono;
-                    registro.NroVoucher = registros.NroVoucher;
-                    registro.NombreBanco = registros.NombreBanco;
-                    registro.TextoGlosa = registros.TextoGlosa;
-                    registro.UsuarioCreacion = registros.UsuarioCreacion;
-                    registro.FechaCreacion = registros.FechaCreacion;
-                    registro.UsuarioModificacion = registros.UsuarioModificacion;
-                    registro.FechaModificacion = registros.FechaModificacion;
-                    registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
-                    prueba.registros.Add(registro);
-                }
+                Registros registro = new Registros();
+                registro.IdRegistro = registros.IdRegistro;
+                registro.IdParametroTipo = registros.IdParametroTipo;
+                registro.IdParametroSubtipo = registros.IdParametroSubtipo;
+                registro.NroRecibo = registros.NroRecibo;
+                registro.Fecha = registros.Fecha;
+                registro.ImporteTotalBoleta = registros.ImporteTotalBoleta;
+                registro.Igv = registros.Igv;
+                registro.MontoIgv = registros.MontoIgv;
+                registro.NombreEmpresa = registros.NombreEmpresa;
+                registro.NotaInformativa = registros.NotaInformativa;
+                registro.NombreFactura = registros.NombreFactura;
+                registro.FechaGlosa = registros.FechaGlosa;
+                registro.ImporteDeposito = registros.ImporteDeposito;
+                registro.ImporteTotalTipoIP = registros.ImporteTotalTipoIP;
+                registro.ImporteTotalTipoFR = registros.ImporteTotalTipoFR;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.MontoVoucher = registros.MontoVoucher;
+                registro.NroCheque = registros.NroCheque;
+                registro.MontoCheque = registros.MontoCheque;
+                registro.NroNotaAbono = registros.NroNotaAbono;
+                registro.MontoNotaAbono = registros.MontoNotaAbono;
+                registro.NroVoucher = registros.NroVoucher;
+                registro.NombreBanco = registros.NombreBanco;
+                registro.TextoGlosa = registros.TextoGlosa;
+                registro.UsuarioCreacion = registros.UsuarioCreacion;
+                registro.FechaCreacion = registros.FechaCreacion;
+                registro.UsuarioModificacion = registros.UsuarioModificacion;
+                registro.FechaModificacion = registros.FechaModificacion;
+                registro.Anulado = registros.Anulado;
+                registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == registro.IdRegistro).ToListAsync();
+                listaRegistrosFondoRotatorio.registros.Add(registro);
             }
-            return Ok(prueba);
+            return Ok(listaRegistrosFondoRotatorio.registros);
         }
 
         [HttpGet("{id}")]
@@ -197,7 +195,8 @@ namespace RIAE3._1.Controllers
                     registro.FechaCreacion = registros.FechaCreacion;
                     registro.UsuarioModificacion = registros.UsuarioModificacion;
                     registro.FechaModificacion = registros.FechaModificacion;
-                    registro.listBoletas = await _context.Boletas.Where(p=>p.IdRegistro==id).ToListAsync();
+                    registro.Anulado = registros.Anulado;
+                    registro.listBoletas = await _context.Boletas.Where(p => p.IdRegistro == id).ToListAsync();
                     /*ListaRegistros prueba = new ListaRegistros();
                     prueba.registro.Add(_context.Registros.FirstOrDefault(i=>i.IdRegistro==id));
                     prueba.boletas = _context.Boletas.Where(p => p.IdRegistro == id).ToList();
@@ -209,7 +208,7 @@ namespace RIAE3._1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(RegistrosRequest registros)
+        public async Task<IActionResult> GuardarRegistro(RegistrosRequest registros)
         {
             try
             {
@@ -241,6 +240,7 @@ namespace RIAE3._1.Controllers
                 registro.FechaCreacion = registros.FechaCreacion;
                 registro.UsuarioModificacion = registros.UsuarioModificacion;
                 registro.FechaModificacion = registros.FechaModificacion;
+                registro.Anulado = false;
                 _context.Registros.Add(registro);
                 await _context.SaveChangesAsync();
                 foreach (var modelBoleta in registros.listBoletas)
@@ -261,7 +261,7 @@ namespace RIAE3._1.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put(RegistrosRequest registros)
+        public async Task<IActionResult> modificarRegistro(RegistrosRequest registros)
         {
             try
             {
@@ -294,35 +294,114 @@ namespace RIAE3._1.Controllers
                 registro.FechaCreacion = registros.FechaCreacion;
                 registro.UsuarioModificacion = registros.UsuarioModificacion;
                 registro.FechaModificacion = registros.FechaModificacion;
+                registro.Anulado = registros.Anulado;
                 _context.Entry(registro).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 foreach (var modelBoleta in registros.listBoletas)
                 {
                     var boleta = new Models.Boletas();
-                    boleta.IdBoleta = modelBoleta.IdBoleta;
-                    boleta.IdRegistro = registro.IdRegistro;
-                    boleta.IdParametro = modelBoleta.IdParametro;
-                    boleta.ImporteUnitarioClasificador = modelBoleta.ImporteUnitarioClasificador;
-                    _context.Entry(boleta).State = EntityState.Modified;
-                    await _context.SaveChangesAsync();
+                    //validamos si han ingresado nuevos clasificadores, los nuevos clasificadores estaran
+                    //con IdBoleta = 0
+                    //si solo modificaron los campos de un clasificador ya existente:
+                    if (modelBoleta.IdBoleta != 0)
+                    {
+                        boleta.IdBoleta = modelBoleta.IdBoleta;
+                        boleta.IdRegistro = registro.IdRegistro;
+                        boleta.IdParametro = modelBoleta.IdParametro;
+                        boleta.ImporteUnitarioClasificador = modelBoleta.ImporteUnitarioClasificador;
+                        _context.Entry(boleta).State = EntityState.Modified;
+                        await _context.SaveChangesAsync();
+                    }
+                    //si el IdBoleta = 0 entonces es nuevo y debe agregarse a la base de datos
+                    else
+                    {
+                        boleta.IdRegistro = registro.IdRegistro;
+                        boleta.IdParametro = modelBoleta.IdParametro;
+                        boleta.ImporteUnitarioClasificador = modelBoleta.ImporteUnitarioClasificador;
+                        _context.Boletas.Add(boleta);
+                        await _context.SaveChangesAsync();
+                    }
+                    //si eliminan un clasificador sera en DeleteDetalle()
                 }
-                return Ok("registro con boletas modificado");
+                return Ok("Se modificó el registro correctamente");
             }
             catch (Exception ex)
             {
                 return BadRequest(ex);
             }
         }
-        [HttpDelete("{id}")]
-        //[HttpGet("{id}")]
+
+        [HttpPut]
+        [Route("anular")]
+        public JsonResult AnularRegistro(Registros registros)
+        {
+            string query = @"
+                            update dbo.Registros set
+                            dbo.Registros.Anulado = @Anulado
+                            where dbo.Registros.IdRegistro = @IdRegistro
+                            ";
+            DataTable table = new DataTable();
+            string sqlDataSource = Configuration.GetConnectionString("RiaeAppConex");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myCommand.Parameters.AddWithValue("@IdRegistro", registros.IdRegistro);
+                    myCommand.Parameters.AddWithValue("@Anulado", registros.Anulado);
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+            if (registros.Anulado == true)
+            {
+                return new JsonResult("Registro anulado");
+            }
+            else
+            {
+                return new JsonResult("Registro activado");
+            }
+        }
+
+        [HttpPut]
+        [Route("importetotal")]
+        public JsonResult ModificarImporteTotal (Registros registros)
+        {
+            string query = @"
+                            update dbo.Registros set
+                            dbo.Registros.ImporteTotalBoleta = @ImporteTotalBoleta
+                            where dbo.Registros.IdRegistro = @IdRegistro
+                            ";
+            DataTable table = new DataTable();
+            string sqlDataSource = Configuration.GetConnectionString("RiaeAppConex");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myCommand.Parameters.AddWithValue("@IdRegistro", registros.IdRegistro);
+                    myCommand.Parameters.AddWithValue("@ImporteTotalBoleta", registros.ImporteTotalBoleta);
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+            return new JsonResult("El total ha sido actualizado.");
+        }
+        /*Esta opcion se dio de baja debido a que se eliminan completamente los registros de la
+        base de datos y solo debe cambiar de estado de 0 a 1*/
+        /*[HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
-        //public IActionResult Delete(int id)
         {
             try
             {
                 var listaBoletas = await _context.Boletas.ToListAsync();
                 
-                //return Ok(registroAEliminar);
                 foreach (var boletaAEliminar in listaBoletas)
                 {
                     if (boletaAEliminar.IdRegistro == id)
@@ -346,7 +425,6 @@ namespace RIAE3._1.Controllers
                             }
                         }
                     }
-                    //return Ok("registro con boletas eliminado");
                 }
                 var registroAEliminar = await _context.Registros.FindAsync(id);
                 _context.Remove(registroAEliminar);
@@ -358,6 +436,52 @@ namespace RIAE3._1.Controllers
                 return BadRequest(ex + "hola");
             }
         }
+    }*/
+
+        [HttpDelete("{id}")]
+        public JsonResult DeleteDetalle(int id)
+        {
+            string query = @"
+                    select * from dbo.Boletas
+                    where IdBoleta = @IdBoleta
+                    ";
+            DataTable table = new DataTable();
+            DataTable tableEliminar = new DataTable();
+            string sqlDataSource = Configuration.GetConnectionString("RiaeAppConex");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myCommand.Parameters.AddWithValue("@IdBoleta", id);
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    if (table.Rows.Count == 0)
+                    {
+                        return new JsonResult("El clasificador ya no existe en el registro. Vuelva a cargar la " +
+                            "página por favor. ");
+                    }
+                    else
+                    {
+                        string queryEliminar = @"
+                            delete from dbo.Boletas
+                            where IdBoleta = @IdBoleta
+                            ";
+                        using (SqlCommand myCommand1 = new SqlCommand(queryEliminar, myCon))
+                        {
+                            myCommand1.Parameters.AddWithValue("@IdBoleta", id);
+                            myReader = myCommand1.ExecuteReader();
+                            tableEliminar.Load(myReader);
+                            myReader.Close();
+                            myCon.Close();
+                        }
+                        return new JsonResult("El clasificador ha sido eliminado del registro. ");
+                    }
+                }
+            }
+        }
     }
     //var boletaAEliminar = _context.Boletas.FindAsync(boleta.IdBoleta);
     /*if (registroAEliminar == null)
@@ -367,30 +491,3 @@ namespace RIAE3._1.Controllers
     _context.Remove(registroAEliminar);
     await _context.SaveChangesAsync();*/
 }
-//como pasar objeto parecido al que se pasa en FindAsync para eliminar
-/*ObjectFind objectFind = new ObjectFind();
-                        {
-                            objectFind.IsCompleted = false;
-                            objectFind.IsCompletedSuccessfully = false;
-                            objectFind.IsFaulted = false;
-                            objectFind.IsCanceled = false;
-                            objectFind.Result = new ResultModel()
-                            {
-                                IdBoleta = boletaAEliminar.IdBoleta,
-                                IdRegistro = boletaAEliminar.IdRegistro,
-                                IdParametro = boletaAEliminar.IdParametro,
-                                ImporteUnitarioClasificador = boletaAEliminar.ImporteUnitarioClasificador
-                            };
-
-                        }
-                        
-                        return Ok(objectFind);
-                        _context.Remove(objectFind);
-                        await _context.SaveChangesAsync();
-                        */
-
-
-//////////////////////////////////////////////////////
-//para sacar reportes con recibos ordenados: Nota: solo faltaria  una condicional para q sea solo de tipo 1 o 2
-//var c = _context.Registros.OrderBy(p => p.NroRecibo);
-//return Ok(c);

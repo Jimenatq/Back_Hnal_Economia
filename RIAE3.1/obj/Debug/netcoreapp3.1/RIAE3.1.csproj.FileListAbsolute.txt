@@ -238,3 +238,5 @@ C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\sc
 C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.RazorTargetAssemblyInfo.cache
 C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.csproj.CopyComplete
 C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\obj\Debug\netcoreapp3.1\RIAE3.1.genruntimeconfig.cache
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\System.DirectoryServices.dll
+C:\Users\jtoledo\Desktop\nuevo acceso\RIAE3.1\RIAE3.1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll

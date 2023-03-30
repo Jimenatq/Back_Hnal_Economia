@@ -36,7 +36,12 @@ namespace RIAE3._1.Models
         public DateTime? FechaCreacion { get; set; }
         public string UsuarioModificacion { get; set; }
         public DateTime? FechaModificacion { get; set; }
-        
+        public bool Anulado { get; set; }
+
         public List<Boletas> listBoletas = new List<Boletas>();
+    }
+    public class listaRegistrosPorAnio
+    {
+        public int anio { get; set; }
     }
 }

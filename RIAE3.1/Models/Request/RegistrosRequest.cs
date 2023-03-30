@@ -9,8 +9,6 @@ namespace RIAE3._1.Models.Request
     public class ListaRegistros
     {
         public List<Registros> registros = new List<Registros>();
-
-        //public  List<Models.Boletas> boletas = new List<Models.Boletas>();
     }
     public class RegistrosRequest
     {
@@ -42,6 +40,7 @@ namespace RIAE3._1.Models.Request
         public DateTime? FechaCreacion { get; set; }
         public string UsuarioModificacion { get; set; }
         public DateTime? FechaModificacion { get; set; }
+        public bool Anulado { get; set; }
         public List<Boletas> listBoletas { get; set; }
         public RegistrosRequest()
         {

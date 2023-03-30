@@ -33,7 +33,6 @@ namespace RIAE3._1
                                       {
                                           policy
                                           .AllowAnyOrigin()
-                                          //.WithOrigins("http://localhost:8081")
                                           .AllowAnyHeader().AllowAnyMethod();
                                       });
                 });
